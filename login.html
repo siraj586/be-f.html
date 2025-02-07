@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Logo and Menu Toggle -->
+      <div class="nav-header">
+        <a href="#" class="logo">
+          <img src="images/logo-removebg-preview.png" alt="Logo" class="logo-img">
+        </a>
+        <button class="menu-toggle" onclick="toggleSidenav()">&#9776;</button>
+      </div>
+  
+      <!-- Sidenav (Right Side) -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidenav()">&times;</a>
+        <ul>
+          <li><a href="be-f.html" class="active">Home</a></li>
+          <li><a href="#About-Us">About Us</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+          <li><a href="login.html">Log in</a></li>
+        </ul>
+      </div>
+  
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="be-f.html">Home</a></li>
+        <li><a href="#About-Us">AboutUs</a></li>
+        <li><a href="#contactus">ContactUs</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+  
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggel-btn" onclick="login()" > Login</button>
+      <button type="button" class="toggel-btn" onclick="register()" > Register</button>
+      </div>
+      <form class="input-group " id="login">
+        <input type="text" class="input-field" placeholder="user name" required>
+        <input type="text" class="input-field" placeholder="user password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button  type="submit" class="submit-btn">Login </button>
+      </form>
+      <form class="input-group" id="register">
+        <input type="text" class="input-field" placeholder="user name" required>
+        <input type="email" class="input-field" placeholder=" your email" required>
+        <input type="text" class="input-field" placeholder="user password" required>
+        <input type="tel" class="input-field"  placeholder="your phone number" required>
+        <input type="checkbox" class="check-box"><span> I Agree to the condition</span>
+        <button type="submit" class="submit-btn"> Register </button>
+      </form>
+    </div>
+  
+  </div>
+  <script>
+    let x = document.getElementById('login');
+    let y = document.getElementById('register');
+    let z = document.getElementById('btn');
+    
+
+    function register() {
+      x.style.left='-400px';
+      y.style.left='50px';
+      z.style.left ='110px'
+    }
+    function login() {
+      x.style.left='50px';
+      y.style.left='450px';
+      z.style.left ='0px'
+    }
+
+    function toggleSidenav() {
+  const sidenav = document.getElementById("mySidenav");
+  sidenav.style.width = "250px";
+}
+
+function closeSidenav() {
+  const sidenav = document.getElementById("mySidenav");
+  sidenav.style.width = "0";
+}
+
+
+  </script>
+</body>
+</html>

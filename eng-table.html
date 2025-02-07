@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+*{
+  padding: 0;
+  margin: 0;
+  font-family:sans-serif ;
+}
+
+header {
+  background-color: #3d3d3d;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+  
+}
+.logo {
+  width: 60px;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+}
+ul li a {
+  text-decoration: none;
+  margin: 0px 10px;
+  color: white;
+}
+.active {
+  color: #6b8ac8;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+table{
+width: 90%;  
+}
+tr:nth-child(even) {
+  background-color: #E5E8ED;
+}
+tr:nth-child(1){
+  background-color: #C4CDD6;
+}
+td{ 
+  margin:0;
+  padding: 6px;
+color: #8c8d8f;
+}
+#h1{
+  padding-top: 20px;
+}
+h1{
+  color: #6b8ac8;
+}
+@media (max-width: 950px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+    <a href=""> <img src="logo-removebg-preview.png" alt="" class="logo"></a>
+
+    <ul>
+      <li><a href="be-f.html" class="active">Home</a></li>
+       <li> <a href="#About-Us"> About Us</a></li> 
+       <li> <a href="#contactus">Contact Us</a></li> 
+      <li> <a href="login.html">Log in</a></li>
+    </ul>  
+  </nav>
+  </header>
+  <center>  <h1 id="h1"> English Course</h1></center>
+    <main>
+      <table>
+        <tr>
+          <td style="color: black;">instructor</td>
+          <td style="color: black;"> days</td>
+          <!-- <td  style="color: black;"> Iced</td> -->
+          <td  style="color: black;"> cost</td>
+      </tr>
+      <tr>
+          <td>Lama </td>
+          <td>Monday-wednesday-friday</td>
+          <td>50$</td>
+      </tr>
+      <tr>
+          <td>Jihan </td>
+          <td>Monday-wednesday-friday</td>
+          <td>50$</td>
+      </tr>
+      <tr>
+          <td> Rami</td>
+          <td>Monday-wednesday-friday</td>
+          <td>50$</td>
+  
+      </tr>
+      <tr>
+          <td> Wissam </td>
+          <td>Monday-wednesday-friday</td>
+          <td>50$</td>
+      </tr>
+      <tr>
+          <td> Dana</td>
+          <td>sunday-tuesday-thersday</td>
+          <td>50$</td>
+      </tr>
+      <tr>
+          <td> Rana </td>
+          <td>sunday-tuesday-thersday</td>
+          <td>50$</td>
+          
+      </tr>
+      <tr>
+          <td> Bahaa</td>
+          <td>sunday-tuesday-thersday</td>
+          <td>50$</td>
+      </tr>
+      </table>
+    </main>
+  
+  
+</body>
+</html>

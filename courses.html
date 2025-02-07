@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    header {
+      background-color: #3d3d3d;
+    }
+    
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Initially hidden; shown in smaller screens */
+}
+
+/* Desktop Menu */
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #6b8ac8;
+}
+
+/* Sidenav Styles (Right Side) */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0; /* Opens from the right */
+  background-color: #111111b9;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav ul li {
+  margin: 20px 0px;
+}
+
+.sidenav ul li a {
+  padding: 8px 32px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.sidenav ul li a:hover {
+  color: #6b8ac8;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .card {
+      width: 350px;
+      border-radius: 15px;
+      padding: 10px;
+      margin: 10px;
+      border: solid 2px rgba(225, 225, 225, 0.18);
+      backdrop-filter: blur(30px);
+      box-shadow: 0px 0px 30px rgba(3, 3, 5, 0.856);
+    }
+
+    .container {
+      background-image: url(images/rm222batch5-kul-18.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      
+    }
+
+    button {
+      padding: 8px;
+      outline: 0;
+      border: 1px solid blue;
+      border-radius: 10px;
+      font-size: 15px;
+      width: 150px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: rgba(52, 52, 211, 0.747);
+    }
+    @media (max-width:750px){
+      .container{
+        flex-wrap: wrap;
+      }
+    }
+    /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    height: 100vh; /* Slightly smaller height for medium screens */
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    height: 180vh; /* Allow height to adjust to content */
+    padding: 15px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- Logo and Menu Toggle -->
+      <div class="nav-header">
+        <a href="#" class="logo">
+          <img src="images/logo-removebg-preview.png" alt="Logo" class="logo-img">
+        </a>
+        <button class="menu-toggle" onclick="toggleSidenav()">&#9776;</button>
+      </div>
+  
+      <!-- Sidenav (Right Side) -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidenav()">&times;</a>
+        <ul>
+          <li><a href="be-f.html" >Home</a></li>
+          <li><a href="#About-Us">AboutUs</a></li>
+          <li><a href="#contactus">ContactUs</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+  
+      <!-- Desktop Menu -->
+      <ul class="nav-menu">
+        <li><a href="be-f.html" >Home</a></li>
+        <li><a href="#About-Us">AboutUs</a></li>
+        <li><a href="#contactus">ContactUs</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <div data-aos="zoom-in-right" data-aos-delay="300"  class="card">
+      <h1> English Course</h1>
+      <hr>
+      <p>
+        Normal English<br>
+        Levels:<br>
+        A1,A2,A3<br>
+        B1,B2,B3<br>
+        C1,C2<br><br>
+        <a href="eng-table.html"> <button> Get The Course</button></a><br><br>
+        We Provide Also Targeted courses Likee:
+      <ol>
+        <li> Medical Courses</li>
+        <li>business Courses</li>
+        <li>Conversation courses</li>
+        <li> Mangement Courses</li>
+      </ol>
+      </p>
+    </div>
+    <div data-aos="zoom-in-right" data-aos-delay="600"  class="card">
+      <h1> spanish course</h1>
+      <hr>
+      <p> 
+        This is a Normal course consists of lessons with the best teachers to help you learn how to speak Spanish fluently.
+      </p>
+        <a href="span-table.html"> <button> Get The Course</button></a>
+    </div>
+    <div  class="card" data-aos="zoom-in-right" data-aos-delay="900" >
+      <h1> German Course</h1>
+      <hr>
+      <p> In This course We prepare you well With the best teachers to pass the German Goethe exam 
+      </p>
+        <a href="ger-table.html"> <button> Get The Course</button></a>
+    </div>
+    
+  
+
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleSidenav() {
+  const sidenav = document.getElementById("mySidenav");
+  sidenav.style.width = "250px";
+}
+
+function closeSidenav() {
+  const sidenav = document.getElementById("mySidenav");
+  sidenav.style.width = "0";
+}
+
+  </script>
+</body>
+
+</html>

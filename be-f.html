@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="be-f.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+     
+  </head>
+  <body>
+  
+    <header>
+      <nav>
+        <!-- Logo and Menu Toggle -->
+        <div class="nav-header">
+          <a href="#" class="logo">
+            <img src="images/logo-removebg-preview.png" alt="Logo" class="logo-img">
+          </a>
+          <button class="menu-toggle" onclick="toggleSidenav()">&#9776;</button>
+        </div>
+    
+        <!-- Sidenav (Right Side) -->
+        <div id="mySidenav" class="sidenav">
+          <a href="" class="close-btn" onclick="closeSidenav()">&times;</a>
+          <ul>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#About-Us">AboutUs</a></li>
+            <li><a href="#contactus">ContactUs</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+    
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li><a href="#" >Home</a></li>
+          <li><a href="#About-Us">AboutUs</a></li>
+          <li><a href="#contactus">ContactUs</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+
+  
+    <main>
+      <div class="background">
+      
+        <div  class="scroll-down">
+          <span class="arrow"> scroll down <br>   <svg  xmlns="http://www.w3.org/2000/svg" height="32" width="24" viewBox="0 0 384 512">
+            <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+          </svg></span> <!-- Unicode arrow -->
+        </div>
+      </div>
+      
+      <section class="first-sec">
+        <!-- Text Content -->
+        <div data-aos="fade-right" class="text-content">
+          <h1 id="About-Us">About Us</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores<br><br>
+            itaque, laudantium sint esse rerum soluta, harum ut neque enim
+            libero debitis corporis hic. Facilis iure similique quo recusandae
+            non nemo?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            itaque, laudantium sint esse rerum soluta, harum ut neque enim
+            libero debitis corporis hic. Facilis iure similique quo recusandae
+            non nemo?
+          </p>
+          <a href="courses.html">
+            <button class="L-btn">Our Courses</button>
+          </a>
+        </div>
+      
+        <!-- Image Content -->
+        <div data-aos="fade-left" class="A-first">
+          <img
+            src="images/121489087_1023982921446899_4617134355705001158_n.jpg"
+            alt="About Us"
+          />
+        </div>
+      </section>
+      
+
+      <section class="second-sec">
+        <h1 id="Our-Gallery" data-aos="fade-right"> Our Gallery</h1>
+        <p data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia totam quibusdam harum quo consequatur <br>recusandae? Placeat illo dignissimos repudiandae odit distinctio doloribus suscipit dolor sit, officiis ex quasi doloremque ipsum.</p>
+        <div  >
+        <img data-aos="fade-up" data-aos-delay="200" src="images/FB_IMG_1734526054611.jpg" alt="">
+        <img data-aos="fade-up" data-aos-delay="400" src="images/FB_IMG_1734526069481.jpg" alt="">
+        <img data-aos="fade-up" data-aos-delay="600" src="images/FB_IMG_1734526078380.jpg" alt="">
+        <img data-aos="fade-up" data-aos-delay="800" src="images/FB_IMG_1734526086712.jpg" alt="">
+        <img data-aos="fade-up" data-aos-delay="1000" src="images/FB_IMG_1734526216092.jpg" alt="">
+        <img data-aos="fade-up" data-aos-delay="1200" src="images/296279308_1478584555986731_867718955423480691_n.jpg" alt="">
+      </div>
+      </section>
+      <!-- <section >
+        <h1 id="our-courses"> Our Courses</h1>
+        <div class="our-courses">
+          <div class="eng-div"><h1 style="color:#4c6ca8 ;">English</h1> <br> <p></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi necessitatibus, repellendus ratione totam impedit, voluptatum rerum, saepe aut eaque numquam incidunt cumque magnam odio aperiam cupiditate dicta quas quia! <br> <button class="register"> register </button> </div>
+        <div class="spanish-div"><h1 style="color: #4c6ca8 ;">Spanish</h1> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iure aut placeat voluptatibus inventore tenetur eius ullam dolores? Error quae tempore quos. Cumque quam sunt eum! Recusandae saepe laudantium minima. <br> <button class="register"> register </button></div>
+        </div>
+        
+      </section> -->
+      <h1 id="Contact-Us">Contact Us</h1>
+      
+      <div class="form" id="contactus" >
+        <form >
+          <label for=" name"> Name</label>
+          <input type="text" id="name" />
+          <label for=" email"> Email</label>
+          <input type="email" id="email" /><br /><br />
+          <label for="comments"> Your Comments</label>
+          <textarea name="" id="comments" role="6"></textarea><br />
+          <center><input type="submit" id="sub-btn" value="SEND" /></center>
+        </form>
+        
+      </div>
+    </main>
+  <section class="third-sec" >
+    <div>
+      <p><h1>About</h1></p>
+      <p> I am siraj masoud<br> frontend web developer</p>
+    </div>
+    <div>
+      <p><h1>Menu</h1> </p>
+        <p> Home</p>
+        <p> About Us</p>
+        <p>Our Gallery</p>
+        <p> Contact Us</p>
+    </div>
+    <div>
+      <p> <h1>Contact Us</h1></p>
+      <p>Address:'the Address'</p>
+      <p> Cll: +961 71 590 629</p>
+      <p>Email:Sirajmasoud@gmail.com</p>
+    </div>
+    
+  </section>
+    <footer>
+      <p>&copy; 2024 All Rights Reserved. Design by Siraj Masoud</p>
+      
+    </footer>
+    <script src="be-f.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
